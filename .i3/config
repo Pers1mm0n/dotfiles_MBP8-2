@@ -181,10 +181,14 @@ bindsym XF86KbdBrightnessUp exec ~/.private_scripts/kbdlight_up.sh
 bindsym XF86KbdBrightnessDown exec ~/.private_scripts/kbdlight_down.sh
 
 # Start compton for transparent effect
-exec --no-startup-id compton -bcCGf -i 0.9 -e 0.9 --no-fading-openclose --sw-opti
+exec --no-startup-id compton -bcCGf -i 0.97 -e 0.97 --no-fading-openclose --sw-opti
 
 # Start-ups
 exec --no-startup-id nm-applet
 exec --no-startup-id copyq
 exec --no-startup-id kupfer
 exec --no-startup-id ~/.private_scripts/run_after_start_up.sh
+
+# automatically switch some window to floating mode
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="task_dialog"] floating enable

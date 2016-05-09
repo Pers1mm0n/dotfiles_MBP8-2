@@ -32,8 +32,9 @@ Plugin 'git://github.com/scrooloose/nerdtree.git'
 Plugin 'git://github.com/altercation/vim-colors-solarized.git'
 " Install Easymotion
 Plugin 'git://github.com/easymotion/vim-easymotion.git'
-" Install markdown syntax highlight
-Plugin 'git://github.com/hallison/vim-markdown'
+" Install pandoc plugins$
+Plugin 'git://github.com/vim-pandoc/vim-pandoc.git'
+Plugin 'git://github.com/vim-pandoc/vim-pandoc-syntax.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
